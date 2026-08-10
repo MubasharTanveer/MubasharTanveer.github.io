@@ -16,9 +16,10 @@ Welcome to the official repository of my personal engineering portfolio. I am an
   - **Xconsol** (*AI Engineer Intern*, Aug 2025 – Feb 2026): RESTful APIs, Chat Magix assistant, n8n + PostgreSQL automation, Linux environment.
 - **🛠️ Technical Projects**:
   1. **ReMIND** — Generative AI Memory Reconstruction Platform (*RAG, FAISS, Sentence Transformers, LLaMA 3, Groq API*).
-  2. **Custom RAG Document Analyzer** (*FastAPI, FAISS, Vector Search, Semantic Search*).
-  3. **Automated Intelligent Support Workflow** (*n8n, PostgreSQL, Conversational AI*).
-  4. **Home Server & Self-Hosted Services Platform** (*Ubuntu Server, Docker, Jellyfin, Pi-hole, Nextcloud, SSH, Samba*).
+  2. **LLM Fine-Tuning & Evaluation Benchmark Suite** (*PyTorch, Hugging Face, PEFT / QLoRA, TRL, Unsloth, Weights & Biases, MMLU Benchmark*).
+  3. **Custom RAG Document Analyzer** (*FastAPI, FAISS, Vector Search, Semantic Search*).
+  4. **Automated Intelligent Support Workflow** (*n8n, PostgreSQL, Conversational AI*).
+  5. **Home Server & Self-Hosted Services Platform** (*Ubuntu Server, Docker, Jellyfin, Pi-hole, Nextcloud, SSH, Samba*).
 - **📜 Certifications**:
   - **AWS Certified Developer – Associate**
   - **Google Cloud Professional Machine Learning Engineer**
