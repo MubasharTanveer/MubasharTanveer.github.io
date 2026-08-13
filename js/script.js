@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typewriter Effect
     const phrases = [
-        "AI Engineer.",
-        "RAG & LLM Specialist.",
-        "FastAPI Backend Engineer.",
-        "n8n & Intelligent Automation Expert.",
-        "NLP & Vector Search Specialist."
+        "AI & Full-Stack Engineer.",
+        "FastAPI & MERN Stack Developer.",
+        "RAG & LLM Pipeline Specialist.",
+        "Frontend (HTML/CSS/JS/React) Developer.",
+        "n8n & Intelligent Automation Expert."
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -70,6 +70,38 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeEffect, 1000);
     }
 
+    // Project Category Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterBtns.length > 0 && projectCards.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const cardCategories = card.getAttribute('data-category') || '';
+                    if (filterValue === 'all' || cardCategories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
+
     // Scroll Reveal Animation
     const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
@@ -88,4 +120,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger on load
 });
+
 
